@@ -29,7 +29,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  
+
 
   @override
   Widget build(BuildContext context) {
@@ -41,8 +41,13 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Wrap(
           children: <Widget>[
             Image.network('https://www.mundodeportivo.com/r/GODO/MD/p5/ContraPortada/Imagenes/2018/05/28/Recortada/img_jgost_20180528-093743_imagenes_md_otras_fuentes_chichen_itza-kVmF-U443908334666RXG-980x554@MundoDeportivo-Web.jpg'),
-            Text(" "),
-            Text("El templo de Kukulkán (estructura también conocida con el nombre de «El Castillo», debido a que los conquistadores españoles en el siglo xvi buscaban alguna similitud arquitectónica con las existentes en el continente europeo), es un edificio prehispánico ubicado en la península de Yucatán, en el actual estado del mismo nombre.",),
+            Padding(
+                padding: EdgeInsets.fromLTRB(5, 10, 10, 10),
+                child: Text("Templo de Kukulkán",style: TextStyle(fontSize: 16,fontWeight: FontWeight.bold),),),
+            Padding(
+                padding: EdgeInsets.fromLTRB(5, 0, 0, 0),
+                child: Text("Estructura también conocida con el nombre de 'El Castillo', debido a que los conquistadores españoles en el siglo xvi buscaban alguna similitud arquitectónica con las existentes en el continente europeo, es un edificio prehispánico ubicado en la península de Yucatán, en el actual estado del mismo nombre.",),),
+
             Align(
               alignment: Alignment.centerRight,
               child: FlatButton(onPressed: (){
